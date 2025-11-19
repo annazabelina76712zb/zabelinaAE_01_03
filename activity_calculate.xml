@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rassP"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="30dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/DeepPink"
+        android:textSize="36dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/back_style"
+            android:padding="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/rooms"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/back_style"></TextView>
+<EditText
+    android:id="@+id/metersEditText"
+    android:layout_width="170dp"
+    android:layout_height="48dp"
+    android:background="@drawable/back_style"
+    android:hint="@string/countmetr"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="90dp"
+    android:padding="10dp"
+    android:textSize="12dp"
+    ></EditText>
+
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="@string/rass"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style"
+            android:textColor="@color/white"
+            >
+        </Button>
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:background="@drawable/back_style"
+            android:hint="@string/rezult"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="130dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="15dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            ></TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
